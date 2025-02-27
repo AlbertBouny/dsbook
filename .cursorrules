@@ -1,0 +1,119 @@
+{
+  "projectName": "DeepSeek+自媒体指南",
+  "description": "从入门到进阶的实战指南 - 低成本搭建自己的AI高绩效团队",
+  "targetAudience": [
+    "自媒体新手",
+    "有一定经验的自媒体创作者",
+    "企业新媒体运营人员",
+    "对AI技术感兴趣的内容创作者"
+  ],
+  "styleGuide": {
+    "preferredTone": "教学与实操相结合，数据支持，类似《浪潮之巅》风格",
+    "contentFocus": "实用性、数据驱动、案例展示",
+    "flexibility": "允许在保持核心内容结构的前提下灵活扩展和深入",
+    "contentLevels": {
+      "基础篇": "入门级，适合零基础读者",
+      "平台实战": "中级，需要基本操作经验",
+      "项目实战": "高级，适合有一定项目经验的读者"
+    }
+  },
+  "rules": [
+    {
+      "pattern": "chapters/*.md",
+      "description": "书籍章节内容",
+      "constraints": "保持章节结构，但内容可自由发挥",
+      "contentGuidelines": [
+        "包含实操步骤和案例",
+        "融入数据支持观点",
+        "可以灵活添加子章节",
+        "每个章节至少包含2个详细案例",
+        "案例需包含背景、实施过程、结果数据",
+        "案例需注明来源或提供参考链接"
+      ]
+    },
+    {
+      "pattern": "images/**/*",
+      "description": "图表和图片资源",
+      "constraints": "分类存放，命名规范",
+      "contentGuidelines": [
+        "建议包含数据图表",
+        "图表分辨率不低于1920x1080",
+        "使用统一的配色方案",
+        "所有图表需有清晰标注和说明",
+        "数据来源需明确标注"
+      ]
+    },
+    {
+      "pattern": "README.md",
+      "description": "项目概述文件",
+      "constraints": "需包含书籍简介和目录",
+      "contentGuidelines": [
+        "包含项目最新进展",
+        "提供快速入门指南",
+        "列出主要贡献者",
+        "提供反馈和联系方式"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "name": "书籍结构",
+      "description": "三部分结构：AI基础篇、平台实战案例、项目实战案例",
+      "flexibility": "可在各章节内部自由发挥，但保持整体框架",
+      "guidelines": [
+        "每部分包含3-5个章节",
+        "章节之间保持逻辑连贯",
+        "提供章节间的交叉引用"
+      ]
+    },
+    {
+      "name": "语言风格",
+      "description": "专业、数据驱动、有洞见，类似吴军《浪潮之巅》风格",
+      "flexibility": "可根据具体章节调整语气，保持整体一致性",
+      "guidelines": [
+        "避免过度使用专业术语",
+        "关键概念需提供解释",
+        "保持段落简洁，每段不超过200字",
+        "使用主动语态"
+      ]
+    }
+  ],
+  "flexibilitySettings": {
+    "contentExpansion": "encouraged",
+    "structuralChanges": "limited",
+    "styleConsistency": "highly_recommended",
+    "dataUsage": "encouraged",
+    "updatePolicy": {
+      "frequency": "每月一次",
+      "versionControl": "使用语义化版本号",
+      "changeLog": "需记录所有重大更新"
+    },
+    "collaboration": {
+      "branchPolicy": "功能分支开发，主分支保护",
+      "reviewProcess": "至少两人审阅",
+      "commitMessage": "遵循约定式提交规范"
+    }
+  },
+  "wordCount": {
+    "total": {
+      "target": 100000,
+      "range": [100000, 120000]
+    },
+    "perChapter": {
+      "target": 8000,
+      "range": [7000, 9000]
+    },
+    "perSection": {
+      "target": 2000,
+      "range": [1500, 2500]
+    },
+    "guidelines": [
+      "每章包含3-5个小节",
+      "每个小节控制在1500-2500字",
+      "案例部分约占总字数的30%",
+      "实操步骤约占总字数的40%",
+      "理论分析约占总字数的30%",
+      "图表说明不计入总字数"
+    ]
+  }
+}
